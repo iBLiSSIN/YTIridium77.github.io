@@ -4,11 +4,6 @@
 	background-color: gray;
 }
 
-.logo {
-	display: flex;
-	justify-content: center;
-	padding: 10px;
-}
 .iri {
 	border: 5px solid red;
 }

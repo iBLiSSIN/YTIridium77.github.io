@@ -8,7 +8,9 @@
 	display: flex;
 	justify-content: center;
 	padding: 10px;
-	border-style: solid;
+}
+.iri {
+	border: 5px solid gray;
 }
 
 h1{

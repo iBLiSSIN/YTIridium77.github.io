@@ -11,7 +11,8 @@
 }
 
 #Iridium77logo {
-	border-style: 5px solid red;
+	border-style: solid;
+	border-radius: 10px;
 	display: flex;
 	justify-content: center;
 	padding: 10px;

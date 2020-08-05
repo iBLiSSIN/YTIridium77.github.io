@@ -47,6 +47,12 @@ details{
 	padding-bottom: 20px;
 }
 
+.downloadbutton {
+	font-family: Sans-serif;
+	border: none;
+	background-color: green;
+}
+
 h2 {
 	padding: 10px;
 }

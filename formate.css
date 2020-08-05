@@ -5,6 +5,7 @@
 }
 
 .logo {
+	border: solid;
 	display: flex;
 	justify-content: center;
 	padding: 10px;

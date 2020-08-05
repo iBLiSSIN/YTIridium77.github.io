@@ -1,5 +1,4 @@
 .header {
-	border-radius: 20px;
 	width: 100%;
 	height: 255px;
 	background-color: gray;
@@ -9,9 +8,6 @@
 	display: flex;
 	justify-content: center;
 	padding: 10px;
-}
-img#iridiumlogo {
-	border-radius: 20px;
 }
 
 h1{

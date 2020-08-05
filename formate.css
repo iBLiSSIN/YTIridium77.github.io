@@ -48,8 +48,12 @@ details{
 }
 
 .downloadbutton {
+	height: 100px;
+	width: 500px;
+	font-size: 1.5em;
 	font-family: Sans-serif;
 	border: none;
+	border-radius: 10px;
 	background-color: green;
 }
 

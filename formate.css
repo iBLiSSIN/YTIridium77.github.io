@@ -9,6 +9,9 @@
 	justify-content: center;
 	padding: 10px;
 }
+img#iridiumlogo {
+	border-radius: 20px;
+}
 
 h1{
 	text-align: center;

@@ -48,6 +48,10 @@ details{
 	margin: 10px;
 }
 
+img#examplepic {
+	width: 75%;
+}
+
 .footer {
 	margin-top: 20px;
 }

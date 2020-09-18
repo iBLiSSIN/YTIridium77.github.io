@@ -1,0 +1,89 @@
+
+div#header {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px;
+	height: auto;
+	border-radius: 20px;
+	background-color: gray;
+	color: #DFDED6;
+	font-family: Sans-serif;
+}
+
+button#login {
+	border-radius: 5px;
+	background-color: #00c234;
+	width: 150px;
+	height: 50px;
+	float: right;
+}
+
+img#logo {
+	justify-content: center-left;
+	float: left;
+	border-radius: 20px;
+	padding-right: 200px;
+}
+
+h1.übertitel {
+	padding: 10px;
+	color: #DFDED6;
+	font-family: Sans-serif;
+}
+
+ul#überschrift {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+}
+
+li.title {
+	margin: 10px;
+}
+
+a.title {
+	color: #DFDED6;
+	text-decoration: none;
+}
+
+p.gros {
+	size: 50px;
+	font-weight: bold;
+}
+
+ul.vorteil {
+	list-style-type: none;
+}
+
+div.content {
+	box-sizing: border-box;
+	margin: 10px;
+	margin-right: 0px;
+	float: left;
+	padding: 10px;
+	width: 300px;
+	height: auto;
+	border: solid;
+	border-width: 10px;
+	border-color: yellow;
+	border-radius: 20px;
+	background-color: #c4c4c4;
+	color: #454440;
+	font-family: Sans-serif;
+}
+
+div#angebote {
+	width: 100%;
+	height: 600px;
+}
+
+div#footer {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px;
+	height: auto;
+	border-radius: 20px;
+	background-color: gray;
+	color: #DFDED6;
+	font-family: Sans-serif;
+}

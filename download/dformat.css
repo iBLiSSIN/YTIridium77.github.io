@@ -54,6 +54,10 @@ button.download {
     height: 50px;
 }
 
+h1.über:hover {
+    background-color: #7d7b7b;
+}
+
 button.download:hover {
     background-color: darkgreen;
 }

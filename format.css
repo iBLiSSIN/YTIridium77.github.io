@@ -1,4 +1,9 @@
+@font-face {
+    font-family: surviv;
+    src: url(Jura-Bold.ttf);
+  }
 div#head {
+font-family: surviv, Impact;
 background-color: darkgrey;
 text-align: center;
 display: block;

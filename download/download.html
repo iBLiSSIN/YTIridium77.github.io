@@ -17,11 +17,29 @@
                 <li><a class="list" href="">Downloads</a></li>
             </ul>
         </div>
+
         <div class="content">
-            <h1 class="hover" onclick="ausklappen();" >A YTIridium77 Mod</h1>
-            <p id="content" style="display: none;">CONTENT</p>
+
+            <h1 onclick="ausklappen();" >A YTIridium77 Mod</h1>
+            <div id="content" style="display: none;">
+                <p>A Mod for the browser game: <a class="list" href="https://surviv.io/">surviv.io</a>.</p>
+                <h2 onclick="ausklappen2();">Features</h2>
+
+                <div id="content2" style="display: none;">
+                    <p>Background Image: <br> 5 different images for the start overlay background in surviv.io! <br> You have no Idea how it looks?</p>
+                    <h2 onclick="ausklappen3();">Pictures</h2>
+
+                    <div id="content3" style="display: none;">
+                        <img class="imgexample" src="../img/g0dak.png" alt="g0dak gif example.">
+                    </div>
+
+                </div>
+
+            </div>
         </div>
+
     </body>
+
     <script>
         function ausklappen() {
             var lost = document.getElementById("content");
@@ -33,5 +51,27 @@
             console.log("lost");
             }
         };
+        function ausklappen2() {
+            var lost = document.getElementById("content2");
+            if(lost.style.display == "none"){
+            lost.style.display = "block";
+            console.log("lost");
+            }else{
+            lost.style.display = "none";
+            console.log("lost");
+            }
+        };
+        function ausklappen3() {
+            var lost = document.getElementById("content3");
+            if(lost.style.display == "none"){
+            lost.style.display = "block";
+            console.log("lost");
+            lost.scrollIntoView({behavior: "smooth"});
+            }else{
+            lost.style.display = "none";
+            console.log("lost");
+            }
+        };
     </script>
+
 </html>

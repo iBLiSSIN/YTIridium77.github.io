@@ -2,4 +2,5 @@ div#head {
 background-color: darkgrey;
 text-align: center;
 display: block;
+margin: "10px";
 }

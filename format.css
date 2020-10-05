@@ -1,5 +1,5 @@
 div#head {
 background-color: darkgrey;
 text-align: center;
-display: flex;
+display: block;
 }

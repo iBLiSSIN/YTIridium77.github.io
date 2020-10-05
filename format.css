@@ -2,5 +2,12 @@ div#head {
 background-color: darkgrey;
 text-align: center;
 display: block;
-margin: "10px";
+}
+
+img#logo {
+margin: 10px;
+padding: 10px;
+border-radius: 5px;
+border: solid;
+border-color: black;
 }

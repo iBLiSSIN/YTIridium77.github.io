@@ -33,11 +33,7 @@
                         <img class="imgexample" src="../img/g0dak.png" alt="g0dak gif example.">
                     </div>
 
-                    <h2 class="clickable" onclick="ausklappen4();">How to use</h2>
-
-                    <div id="content4" style="display: none;">
-                        <p>COMING SOON in a while</p>
-                    </div>
+                    <h2 class="clickable" onclick="tutorial();">How to use</h2>
 
                 </div>
 
@@ -80,16 +76,8 @@
             console.log("lost");
             }
         };
-        function ausklappen4() {
-            var lost = document.getElementById("content4");
-            if(lost.style.display == "none"){
-            lost.style.display = "block";
-            console.log("lost");
-            lost.scrollIntoView({behavior: "smooth"});
-            }else{
-            lost.style.display = "none";
-            console.log("lost");
-            }
+        function tutorial() {
+            window.open("tut/tut1.html")
         };
         function dw1() {
             window.open("downloads/Mod.zip",'_blank');

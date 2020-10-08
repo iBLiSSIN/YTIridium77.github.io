@@ -8,6 +8,7 @@ background-color: darkgrey;
 text-align: center;
 display: block;
 padding: 10px;
+border-radius: 25px;
 }
 
 img#logo {

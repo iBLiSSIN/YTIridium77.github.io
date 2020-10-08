@@ -45,3 +45,26 @@ h2#main {
     text-align: center;
     text-decoration: underline;
 }
+
+h2.über {
+    text-align: center;
+    color: blue;
+    margin-top: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    margin: 50px;
+}
+
+li.in {
+    margin: 10px;
+}
+
+img.ex {
+    width: 50%;
+}

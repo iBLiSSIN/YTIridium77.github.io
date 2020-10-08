@@ -25,9 +25,57 @@
             <h2 id="inhalt">Content</h2>
 
             <ul>
-                <li>Kap 1</li>
+                <li class="in" onclick="kap1();">1. The right Browser</li>
+                <li class="in" onclick="kap2();">2. Tampermonkey (Google Chrome)</li>
             </ul>
+
+            <div id="kap1">
+                <h2 class="über">1. The right Browser</h2>
+                <p>If you play surviv.io via steam, there is no way to use this mod. I personally use Google Chrome to use the mod and play surviv.io. Here are some more possible browsers listed:</p>
+                <ul>
+                    <li><a href="https://www.google.de/chrome/?brand=CHBD&gclid=Cj0KCQjw8fr7BRDSARIsAK0Qqr4YC1abJ-cjynTV9AXv4uO7no0joX2UxAK21kewpkD5uSzyF3fecmMaAj54EALw_wcB&gclsrc=aw.ds" target="_blank">Google Chrome</a></li>
+                    <li><a href="https://www.mozilla.org/de/firefox/new/" target="_blank">Firefox</a></li>
+                </ul>
+            </div>
+
+            <div id="kap2">
+                <h2 class="über">2. Tampermonkey (Google Chrome)</h2>
+                <p>Tampermonkey is a chrome extension that allows a user to use their own scripts. Since my mod is such a script it needs this</p>
+                <p>To add this extension click on this link: <a href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=de" target="_blank">LINK</a></p>
+                <img class="ex" src="tamper1.png">
+                <p>After this step you write "chrome://extensions" into your browser and click on the button circled below.</p>
+                <img class="ex" src="tamper2.png">
+                <p>Scroll down and click the button circled below.</p>
+                <img class="ex" src="tamper3.png">
+                <p>Now press the + symbol circled below.</p>
+                <img class="ex" src="tamper4.png">
+                <p>Delete all text from the page. And drag and drop the downloaded file into the page. This should look like this.</p>
+                <img class="ex" src="tamper5.png">
+                <p>Press "strg" + "s" to save the script. Now it should looks like this:</p>
+                <img class="ex" src="tamper6.png">
+                <p>After you finished open surviv.io klick the menü button and choose you custom background!</p>
+                <p>For getting the newest update about this Mod join this <a href="https://discord.gg/J8kBwk9" target="_blank">Discord Server</a>.</p>
+            </div>
+
+            <h2>Tutorial for Firefox coming soon!</h2>
+
         </div>
     </body>
+
+    <script>
+        
+        function kap1() {
+            var el = document.getElementById("kap1");
+            el.scrollIntoView({behavior: "smooth"});
+            console.log("scrolled");
+        }
+
+        function kap2() {
+            var el = document.getElementById("kap2");
+            el.scrollIntoView({behavior: "smooth"});
+            console.log("scrolled");
+        }
+
+    </script>
 
 </html>

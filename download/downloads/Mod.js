@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         A YTIridium77 Mod
 // @namespace    https://ytiridium77.github.io/
-// @version      2.0
+// @version      2.1
 // @description  A small decoration features for surviv.io
 // @author       『Philipp』#1899
 // @match        https://surviv.io/
@@ -396,7 +396,7 @@ var elems = document.getElementsByClassName('ui-weapon-name')
 
 //custom background
 
-document.getElementById('modal-settings-body').innerHTML += '<h2>YTIridium77 Mod Menü</h2> <h2>Background Image</h2> <button class="backbutton">Iridium</button> <button class="backbutton">Tankalty YT</button> <button class="backbutton">GAMERIO</button> <button class="backbutton">Zmedo</button> <button class="backbutton">iWolf</button> <button class="backbutton">g0dak</button>';
+document.getElementById('modal-settings-body').innerHTML += '<h2>YTIridium77 Mod Menü</h2> <h2>Background Image</h2> <button class="backbutton">Iridium</button> <button class="backbutton">Tankalty YT</button> <button class="backbutton">GAMERIO</button> <button class="backbutton">Zmedo</button> <button class="backbutton">iWolf</button> <button class="backbutton">g0dak</button> <button class="backbutton">Jtrick</button>';
 
 
 function Iridium() {
@@ -424,6 +424,10 @@ function g0dak() {
     var startoverlay = document.getElementById("start-overlay"); startoverlay.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/749712706210234448/762630592479100958/image0.gif')";
     startoverlay.style.backgroundSize = "auto";
 };
+function Jtrick() {
+    var startoverlay = document.getElementById("start-overlay"); startoverlay.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/727538758055886849/763789074611830834/Screenshot_20201008-174406_Google.jpg')";
+    startoverlay.style.backgroundSize = "100%";
+};
 
 var backbutton = document.getElementsByClassName('backbutton');
 backbutton[0].addEventListener("click", Iridium);
@@ -432,8 +436,15 @@ backbutton[2].addEventListener("click", Gamerio);
 backbutton[3].addEventListener("click", Zmedo);
 backbutton[4].addEventListener("click", iWolf);
 backbutton[5].addEventListener("click", g0dak);
+backbutton[6].addEventListener("click", Jtrick);
 backbutton.style.border = "none";
 backbutton[0].style.merge = "10px";
+backbutton[1].style.merge = "10px";
+backbutton[2].style.merge = "10px";
+backbutton[3].style.merge = "10px";
+backbutton[4].style.merge = "10px";
+backbutton[5].style.merge = "10px";
+backbutton[6].style.merge = "10px";
 backbutton.style.backgroundColor = "yellow";
 
 })();

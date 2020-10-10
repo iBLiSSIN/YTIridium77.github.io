@@ -26,11 +26,25 @@
                 <h2 class="clickable" onclick="ausklappen2();">Features</h2>
 
                 <div id="content2" style="display: none;">
-                    <p>Background Image: <br> 5 different images for the start overlay background in surviv.io! <br> You have no Idea how it looks?</p>
+
+                    <ul>
+                        <li class="li">5 different images for the start overlay background in surviv.io! </li>
+                        <li class="li">Health count as nummber.</li>
+                        <li class="li">Adrenaline count as nummber.</li>
+                        <li class="li">Weapons slot border color is in the same color as the weapon.</li>
+                    </ul>
+                    
                     <h2 class="clickable" onclick="ausklappen3();">Pictures</h2>
 
                     <div id="content3" style="display: none;">
-                        <img class="imgexample" src="../img/g0dak.png" alt="g0dak gif example.">
+
+                        <p onclick="img1();">Picture 1: Background g0dak</p>
+                        <p onclick="img2();">Picture 2: Weapone color</p>
+                        <p onclick="img3();">Picture 3: Health count / Adrenaline count</p>
+
+                        <img id="img1" class="imgexample" src="../img/g0dak.png" alt="g0dak gif example.">
+                        <img id="img2" class="imgexample" src="https://cdn.discordapp.com/attachments/749714154864246846/764431730500960276/unknown.png" alt="Weapone color.">
+                        <img id="img3" class="imgexample" src="https://cdn.discordapp.com/attachments/749714154864246846/764431897648169000/unknown.png" alt="Health count and adrenaline count">
                     </div>
 
                     <h2 class="clickable" onclick="tutorial();">How to use</h2>
@@ -82,6 +96,18 @@
         function dw1() {
             window.open("downloads/Mod.zip",'_blank');
         };
+        function img1(){
+                var img = document.getElementById('img1');
+                img.scrollIntoView({behavior: "smooth"})
+        }
+        function img2(){
+                var img = document.getElementById('img2');
+                img.scrollIntoView({behavior: "smooth"})
+        }
+        function img3(){
+                var img = document.getElementById('img3');
+                img.scrollIntoView({behavior: "smooth"})
+        }
     </script>
 
 </html>

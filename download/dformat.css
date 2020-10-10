@@ -42,6 +42,7 @@ div.content {
 
 img.imgexample {
     width: 50%;
+    margin: 20px;
 }
 
 button.download {
@@ -63,4 +64,9 @@ h2.clickable:hover {
 
 button.download:hover {
     background-color: darkgreen;
+}
+
+li.li {
+    margin: 10px;
+    list-style-type: circle;
 }

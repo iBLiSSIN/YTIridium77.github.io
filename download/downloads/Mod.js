@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name         A YTIridium77 Mod
 // @namespace    https://ytiridium77.github.io/
-// @version      2.1
+// @version      2.5
 // @description  A small decoration features for surviv.io
 // @author       『Philipp』#1899
 // @match        https://surviv.io/
 // @match        https://surviv.io/?region=eu&zone=fra
 // @match        https://www.twitch.tv/popout/survivio/extensions/c79geyxwmp1zpas3qxbddzrtytffta/panel
-// @grant        none
+// @grant        GM_xmlHttpRequest
 // ==/UserScript==
 
 
@@ -396,7 +396,7 @@ var elems = document.getElementsByClassName('ui-weapon-name')
 
 //custom background
 
-document.getElementById('modal-settings-body').innerHTML += '<h2>YTIridium77 Mod Menü</h2> <h2>Background Image</h2> <button class="backbutton">Iridium</button> <button class="backbutton">Tankalty YT</button> <button class="backbutton">GAMERIO</button> <button class="backbutton">Zmedo</button> <button class="backbutton">iWolf</button> <button class="backbutton">g0dak</button> <button class="backbutton">Jtrick</button>';
+document.getElementById('modal-settings-body').innerHTML += '<h2>YTIridium77 Mod Menü</h2> <h2>Background Image</h2> <button class="backbutton">Iridium</button> <button class="backbutton">Tankalty YT</button> <button class="backbutton">GAMERIO</button> <button class="backbutton">Zmedo</button> <button class="backbutton">iWolf</button> <button class="backbutton">g0dak</button> <button class="backbutton">Jtrick</button> <button class="backbutton">JoLe</button>';
 
 
 function Iridium() {
@@ -428,6 +428,13 @@ function Jtrick() {
     var startoverlay = document.getElementById("start-overlay"); startoverlay.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/727538758055886849/763789074611830834/Screenshot_20201008-174406_Google.jpg')";
     startoverlay.style.backgroundSize = "100%";
 };
+function JoLe() {
+    var startoverlay = document.getElementById("start-overlay"); startoverlay.style.backgroundImage = "url('https://cdn.discordapp.com/avatars/419494925093175297/d70af392c36cc371eecf3058d1615e54.webp?size=256')";
+    startoverlay.style.backgroundSize = "auto";
+};
+function Colorchange(element){
+    element.style.color = "white";
+};
 
 var backbutton = document.getElementsByClassName('backbutton');
 backbutton[0].addEventListener("click", Iridium);
@@ -437,14 +444,33 @@ backbutton[3].addEventListener("click", Zmedo);
 backbutton[4].addEventListener("click", iWolf);
 backbutton[5].addEventListener("click", g0dak);
 backbutton[6].addEventListener("click", Jtrick);
-backbutton.style.border = "none";
-backbutton[0].style.merge = "10px";
-backbutton[1].style.merge = "10px";
-backbutton[2].style.merge = "10px";
-backbutton[3].style.merge = "10px";
-backbutton[4].style.merge = "10px";
-backbutton[5].style.merge = "10px";
-backbutton[6].style.merge = "10px";
-backbutton.style.backgroundColor = "yellow";
+backbutton[7].addEventListener("click", JoLe);
+
+var i;
+
+for(i = 0; i <= backbutton.length; i++){
+backbutton[i].style.backgroundColor = "green";
+backbutton[i].style.margin = "5px";
+backbutton[i].style.borderColor = "white";
+backbutton[i].style.borderRadius = "5px";
+};
+
+let times = [];
+
+const getPing = () => {
+
+let ping = new Date;
+
+    let request = new XMLHttpRequest();
+    request.open(`GET`, window.location.href, true);
+
+    request.onload = (() => {
+        o.innerHTML += ` <br> Ping: ${new Date - ping}`;
+        setTimeout(getPing, 500);
+    });
+    request.send();
+}
+
+getPing();
 
 })();

@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         A YTIridium77 Mod
 // @namespace    https://ytiridium77.github.io/
-// @version      2.5
+// @version      2.6
 // @description  A small decoration features for surviv.io
 // @author       『Philipp』#1899
 // @match        https://surviv.io/
@@ -394,6 +394,28 @@ var elems = document.getElementsByClassName('ui-weapon-name')
         }, false);
     }
 
+
+var el = document.createElement("p");
+var el2 = document.getElementsByClassName("ui-team-member ui-bg-standard")[0];
+el2.parentNode.appendChild(el);
+el2.parentNode.insertBefore(el,el2);
+
+const getPing = () => {
+
+let ping = new Date;
+
+    let request = new XMLHttpRequest();
+    request.open(`GET`, window.location.href, true);
+
+    request.onload = (() => {
+        el.innerHTML = ` Ping: ${new Date - ping}`;
+        setTimeout(getPing, 500);
+    });
+    request.send();
+};
+
+getPing();
+
 //custom background
 
 document.getElementById('modal-settings-body').innerHTML += '<h2>YTIridium77 Mod Menü</h2> <h2>Background Image</h2> <button class="backbutton">Iridium</button> <button class="backbutton">Tankalty YT</button> <button class="backbutton">GAMERIO</button> <button class="backbutton">Zmedo</button> <button class="backbutton">iWolf</button> <button class="backbutton">g0dak</button> <button class="backbutton">Jtrick</button> <button class="backbutton">JoLe</button>';
@@ -429,7 +451,7 @@ function Jtrick() {
     startoverlay.style.backgroundSize = "100%";
 };
 function JoLe() {
-    var startoverlay = document.getElementById("start-overlay"); startoverlay.style.backgroundImage = "url('https://cdn.discordapp.com/avatars/419494925093175297/d70af392c36cc371eecf3058d1615e54.webp?size=256')";
+    var startoverlay = document.getElementById("start-overlay"); startoverlay.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/759861463690379344/764867341418627092/ServerIcon_Not_Animated.png')";
     startoverlay.style.backgroundSize = "auto";
 };
 function Colorchange(element){
@@ -454,23 +476,5 @@ backbutton[i].style.margin = "5px";
 backbutton[i].style.borderColor = "white";
 backbutton[i].style.borderRadius = "5px";
 };
-
-let times = [];
-
-const getPing = () => {
-
-let ping = new Date;
-
-    let request = new XMLHttpRequest();
-    request.open(`GET`, window.location.href, true);
-
-    request.onload = (() => {
-        o.innerHTML += ` <br> Ping: ${new Date - ping}`;
-        setTimeout(getPing, 500);
-    });
-    request.send();
-}
-
-getPing();
 
 })();

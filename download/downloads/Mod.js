@@ -396,3 +396,4 @@ let ping = new Date;
 };
 
 getPing();
+})();
